@@ -2,7 +2,7 @@ USE codeup_test_db;
 
 DROP TABLE IF EXISTS albums;
 
--- Create the albums table
+-- Create the albums tables
 CREATE TABLE albums (
                         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                         artist VARCHAR(255),
