@@ -8,3 +8,9 @@ USE codeup_test_db;
            SELECT * FROM albums WHERE genre = 'Rock';
 
 
+-- The query results do not include albums with a genre of "Hard rock" or "Progressive rock"
+-- because the condition in the query is an exact match for the genre column, and it doesn't include subgenres.
+-- To include albums with subgenres, you can use the LIKE operator with wildcard characters.
+-- For example:
+-- SELECT * FROM albums WHERE genre LIKE 'Rock%';
+-- This will include albums with a genre of "Rock", "Hard rock", "Progressive rock", and any other subgenres of "Rock".
